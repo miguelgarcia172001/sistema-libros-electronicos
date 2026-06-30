@@ -42,4 +42,14 @@ public class Libro implements Gestionable {
                 titulo + " - " + autor +
                         " (" + categoria.getNombre() + ")");
     }
+
+    // CONVERSION A JSON (REQUISITO DEL PROYECTO FINAL)
+    public String convertirJSON() {
+
+        return "{ " +
+                "\"id\": " + id + ", " +
+                "\"titulo\": \"" + titulo + "\", " +
+                "\"autor\": \"" + autor + "\"" +
+                " }";
+    }
 }

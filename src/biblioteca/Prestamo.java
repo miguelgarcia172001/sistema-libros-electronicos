@@ -41,4 +41,13 @@ public class Prestamo {
 
         System.out.println("Libro devuelto correctamente.");
     }
+
+    // NUEVO METODO PARA MOSTRAR INFORMACION DEL PRESTAMO
+    public void mostrarInformacion() {
+
+        System.out.println("Información del préstamo:");
+
+        usuario.mostrarInformacion();
+        libro.mostrarInformacion();
+    }
 }
